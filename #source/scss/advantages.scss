@@ -1,0 +1,38 @@
+.advantages {
+   padding-top: 50px;
+   &__container {
+   }
+
+   &__title {
+      font-size: 50px;
+      color: #fff;
+   }
+
+   &__box {
+   }
+
+   &__list {
+      max-width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__item {
+      width: 300px;
+      margin: 20px;
+      background-color: rgba($color: #000000, $alpha: 1);
+      backdrop-filter: blur(2px);
+   }
+
+   &__item-icon {
+      img {
+         width: 100px;
+      }
+   }
+
+   &__item-text {
+      color: #fff;
+      max-width: 200px;
+      font-size: 20px;
+   }
+}

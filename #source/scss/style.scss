@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+@import 'nullstyle.scss';
+@import 'btn-burger.scss';
+@import 'header.scss';
+@import 'main-block.scss';
+@import 'counter.scss';
+@import 'home.scss';
+@import 'slider.scss';
+@import 'main-link.scss';
+@import 'news.scss';
+@import 'reviews.scss';
+@import 'slider2.scss';
+@import 'info.scss';
+@import 'footer.scss';
+html {
+   scroll-behavior: smooth;
+}
+body {
+   @media (max-width: 980px) {
+      padding: 0;
+   }
+
+   a {
+      color: inherit;
+   }
+}
+.not-scroll {
+   overflow: hidden;
+}
+.wrapper {
+   position: relative;
+   max-width: 1600px;
+   margin: 0 auto;
+
+   font-family: 'Open Sans', sans-serif;
+}
+.container-bg {
+   background-image: url('../img/бг.jpg');
+   background-size: cover;
+}
+
+.black-window {
+   display: none;
+   top: 0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #000000;
+   background-color: rgba($color: #000000, $alpha: 0.8);
+   backdrop-filter: blur(2px);
+}

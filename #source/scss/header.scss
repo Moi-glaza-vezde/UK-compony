@@ -1,0 +1,117 @@
+.header {
+   //  overflow: hidden;
+   max-width: 100%;
+
+   @media (max-width: 500px) {
+      padding-top: 10px;
+   }
+   @media (max-width: 400px) {
+      // display: block;
+      max-width: 100%;
+      //flex-direction: column;
+   }
+   //background: #000;
+   position: relative;
+   padding: 30px 0;
+   display: flex;
+   justify-content: space-between;
+   &__logo-box {
+      @media (max-width: 500px) {
+         margin-left: 10px;
+      }
+      margin-right: 20px;
+      margin-left: 30px;
+      // display: flex;
+      // gap: 10px;
+   }
+
+   &__logo {
+   }
+   &__logo-text-box {
+      @media (max-width: 400px) {
+         padding: 10px;
+      }
+      padding: 20px;
+
+      background-color: rgba($color: #ffffff, $alpha: 0.8);
+      backdrop-filter: blur(2px);
+
+      border-radius: 5px;
+   }
+   &__logo-text {
+      @media (max-width: 650px) {
+         font-size: 20px;
+         line-height: 25px;
+      }
+      @media (max-width: 473px) {
+         font-size: 16px;
+         line-height: 20px;
+      }
+      @media (max-width: 391px) {
+         font-size: 13px;
+         line-height: 16px;
+      }
+      font-size: 30px;
+      text-align: center;
+      align-self: center;
+      font-weight: 500;
+      font-weight: 700;
+      color: #000000;
+      color: #141d1f;
+
+      line-height: 40px;
+   }
+
+   &__nav {
+      @media (max-width: 980px) {
+         position: absolute;
+         top: -400px;
+         z-index: 1;
+         background: #ffffff;
+         width: 100%;
+         transition-duration: 0.1s;
+      }
+      margin-right: 30px;
+   }
+
+   &__nav--active {
+      top: 0px;
+   }
+   &__nav-list {
+      @media (max-width: 980px) {
+         display: block;
+         padding-top: 70px;
+         padding-bottom: 70px;
+      }
+
+      display: flex;
+      justify-content: space-between;
+      max-width: 100%;
+
+      background-color: rgba($color: #ffffff, $alpha: 0.8);
+      backdrop-filter: blur(2px);
+      border-radius: 10px;
+      li {
+         @media (max-width: 980px) {
+            text-align: center;
+            width: 200px;
+            margin: 0 auto;
+            font-size: 25px;
+         }
+         color: #141d1f;
+         cursor: pointer;
+         font-size: 20px;
+         font-weight: 500;
+         font-weight: 400;
+         padding: 20px;
+
+         transition-duration: 0.2s;
+      }
+
+      li:hover {
+         background-color: #8ad100;
+         color: #ffffff;
+      }
+   }
+   //display: none;
+}

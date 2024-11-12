@@ -1,0 +1,19 @@
+.aboutus {
+   background-color: #1a1a1a;
+   &__container {
+      padding: 20px;
+   }
+
+   &__title {
+      color: #ffffff;
+      font-size: 50px;
+   }
+
+   &__text {
+      margin-top: 20px;
+      color: #ffffff;
+      font-size: 30px;
+      line-height: 35px;
+      max-width: 1000px;
+   }
+}
